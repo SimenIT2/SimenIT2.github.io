@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Oppgave 1</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="minCanvas" width="500" height="500">
+
+</canvas>
+
+
+<script>
+
+    var minCanvas = document.getElementById("minCanvas");
+    var ctx = minCanvas.getContext("2d");
+
+
+    function draw() {
+        var bredde = innerWidth;
+        var hoyde = innerHeight;
+
+        minCanvas.width = bredde;
+        minCanvas.height = hoyde;
+
+        var x = Math.random() * 1200;
+        var y = Math.random() * 800;
+
+        ctx.fillStyle = `hsla(${Math.random()*360}, 100%, 50%, 0.6)`;
+        ctx.arc(x, y, Math.random() * 200, 0, Math.PI * 180);
+        ctx.stroke();
+        ctx.fill();
+    }
+
+    setInterval(draw, 1000);
+
+</script>
+
+</body>
+</html>
