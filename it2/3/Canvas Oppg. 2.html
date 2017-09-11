@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Oppgave 2</title>
+</head>
+<body>
+
+<canvas id="minCanvas" width="1250" height="720">
+
+</canvas>
+
+
+<script>
+
+    var minCanvas = document.getElementById("minCanvas");
+    var ctx = minCanvas.getContext("2d");
+
+    function draw() {
+        var x = Math.random() * 1100;
+        var y = Math.random() * 660;
+
+        ctx.fillStyle = "green";
+        ctx.fillRect(x, y, 60, 90);
+        ctx.fillStyle = "white";
+        ctx.fillRect(x+60, y, 60, 90);
+        ctx.fillStyle = "orange";
+        ctx.fillRect(x+120, y, 60, 90);
+    }
+
+    setInterval(draw, 100);
+
+    document.onclick = function drawSvensk() {
+        var x = Math.random() * 1100;
+        var y = Math.random() * 640;
+
+        ctx.fillStyle = "blue";
+        ctx.fillRect(x, y, 160, 100);
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(x, y+40, 160, 20);
+        ctx.fillRect(x+50, y, 20, 100);
+    }
+
+
+
+</script>
+
+</body>
+</html>
