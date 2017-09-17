@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.2 Oppgave 1</title>
+</head>
+<body>
+
+<img id="Bilde">
+
+
+<script>
+
+    var Bilde = document.getElementById("Bilde");
+
+    var bildeNr = Math.ceil(Math.random() * 3);
+
+    if(bildeNr === 1) {
+        Bilde.src = "fugl1.jpg";
+    }
+    if(bildeNr === 2) {
+        Bilde.src = "fugl2.jpg";
+    }
+    if(bildeNr === 3) {
+        Bilde.src = "fugl3.jpg";
+    }
+
+
+</script>
+
+</body>
+</html>

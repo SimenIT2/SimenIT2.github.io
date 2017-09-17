@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.1 Oppgave 2</title>
+</head>
+<body>
+
+<img id="Bilde">
+
+<script>
+
+    var Bilde = document.getElementById("Bilde");
+    var test = prompt("Hva er 9+5?");
+
+    if(test === "14") {
+        document.write("Du svarte riktig!");
+        Bilde.src = "pokal.jpg";
+    }
+    else {
+        document.write("Du svarte feil");
+        Bilde.src = "narr.jpg";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.2 Oppgave 4</title>
+</head>
+<body>
+
+<img id="Bilde">
+
+<script>
+
+    var Bilde = document.getElementById("Bilde");
+
+    var ukedag = prompt("Hvilken ukedag er det i dag?");
+    var dato = prompt("Hvilken dato er det i dag?");
+
+    if(ukedag === "fredag" && dato === "13") {
+        document.write("Pass på, i dag er det fredag den 13!");
+        Bilde.src = "svart katt.jpg";
+    }
+    if(ukedag === "fredag" && dato < 13 || dato > 13) {
+        document.write("Endelig helg!");
+        Bilde.src = "pokal.jpg";
+    }
+    else {
+        document.write("Ha en god dag!");
+        Bilde.src = "sol.jpg";
+    }
+</script>
+
+</body>
+</html>

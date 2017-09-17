@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.2 Oppgave 2</title>
+    <style>
+        #terning {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<img id="terning">
+
+<script>
+
+    var terning = document.getElementById("terning");
+    var terningKast = Math.ceil(Math.random() * 6);
+
+    document.write("Du fikk terningkast " + terningKast);
+    if(terningKast === 1) {
+        terning.src = "terning1.jpg";
+    }
+    if(terningKast === 2) {
+        terning.src = "terning2.jpg";
+    }
+    if(terningKast === 3) {
+        terning.src = "terning3.jpg";
+    }
+    if(terningKast === 4) {
+        terning.src = "terning4.jpg";
+    }
+    if(terningKast === 5) {
+        terning.src = "terning5.jpg";
+    }
+    if(terningKast === 6) {
+        terning.src = "terning6.jpg";
+    }
+
+
+</script>
+
+</body>
+</html>
