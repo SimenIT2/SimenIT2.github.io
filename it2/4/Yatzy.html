@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yatzy</title>
+</head>
+<body>
+
+<script>
+
+    var terning1 = Math.ceil(Math.random() * 6);
+    var terning2 = Math.ceil(Math.random() * 6);
+    var terning3 = Math.ceil(Math.random() * 6);
+    var terning4 = Math.ceil(Math.random() * 6);
+    var terning5 = Math.ceil(Math.random() * 6);
+
+    //Er det yatzy
+    if(terning1 === terning2 === terning3 === terning4 === terning5) {
+        document.write("Yatzy");
+    }
+
+
+    //Er summen mellom 4 og 6?
+    var sum = terning1 + terning2;
+    if(sum >= 4 && sum <= 6) {
+        document.write("Summen er mellom 4 og 6");
+    }
+
+    //Sjekke om det er to like
+    if(terning1 === terning2) {
+        document.write("Det er to like");
+    }
+
+</script>
+
+
+
+</body>
+</html>
